@@ -1,0 +1,9 @@
+SECRET = "823e8745f15d6bc253800ff57883f200"
+ALGORITHM = "HS256"
+
+
+class Config:
+    """Base config."""
+
+    SECRET_KEY = SECRET
+    ALGORITHM = ALGORITHM

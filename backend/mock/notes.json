@@ -1,0 +1,28 @@
+{
+    "_id" : "64449b139533b675e282224c",
+    "date" : "2023-04-22T23:42:27.135Z",
+    "themes" : [ 
+        "Aquecimento Global", 
+        "Robos no futuro"
+    ],
+    "new_words" : [ 
+        "644497700f7106fae3d2dab1", 
+        "644497700f7106fae3d2dab0"
+    ],
+    "pronunciation" : [ 
+        {
+            "Iron" : "/ˈaɪrn/"
+        }, 
+        {
+            "Robot" : "/ˈrəʊbət/"
+        }
+    ],
+    "rocked_when_i_say" : [ 
+        "I'm good", 
+        "So far so good"
+    ],
+    "review" : [ 
+        "lorem ipsum", 
+        "Acdetudsada dsadasmksdas"
+    ]
+}
