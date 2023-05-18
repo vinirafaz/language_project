@@ -10,10 +10,12 @@ db.createCollection('user', {
             required: ['username', 'password', 'email', 'is_customer', 'languages'],
             properties:{
                 username: {
-                    bsonType: 'string'
+                    bsonType: 'string',
+                    minLenght: 4
                 },
                 password: {
-                    bsonType: 'string'
+                    bsonType: 'string',
+                    minLenght: 8
                 },
                 email: {
                     bsonType: 'string'
@@ -60,10 +62,26 @@ db.createCollection('user', {
                 is_customer: {
                     bsonType: 'bool'
                 },
+                created_at: {
+                    bsonType: 'date'
+                },
+                last_login: {
+                    bsonType: 'array',
+                    items: {
+                        bsonType: 'date'
+                    }
+                },
                 teachers: {
                     bsonType: 'array',
                     items: {
                         bsonType: 'objectId'
+                    },
+                    if: {
+                        cond:{
+                            field: 'is_customer',
+                            op: eq,
+                            value: true
+                        }
                     }
                 },
                 notes: {
