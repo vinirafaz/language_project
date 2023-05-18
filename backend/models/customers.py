@@ -1,6 +1,7 @@
-from models.base_user import BaseUser, BaseUserInDb
+from models.base_user import BaseUserLogged
 from typing import Optional
 
-class Customer(BaseUserInDb):
+class Customer(BaseUserLogged):
     teachers: Optional[list[str]] = []
     notes: Optional[list[str]] = []
+    

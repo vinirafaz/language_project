@@ -9,16 +9,16 @@ from config.db import connection
 customer = APIRouter()
 
 
-@customer.get("/api/v1/customers")
+@customer.get("/customers")
 async def get_all_customers():
     return userEntityList(connection.teste.student.find())
 
-@customer.get("/api/v1/customers/{customer_id}")
+@customer.get("/customers/{customer_id}")
 async def get_customer_by_id(customer_id: str):
     return userEntity(connection.teste.student.find_one({"_id": ObjectId(customer_id)}))
 
 
-@customer.post("/api/v1/customers")
+@customer.post("/customers")
 async def create_customer(customer: Customer):
     
     new_user = dict(customer)
