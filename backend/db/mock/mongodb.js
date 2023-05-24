@@ -77,10 +77,10 @@ db.createCollection('user', {
                         bsonType: 'objectId'
                     },
                     if: {
-                        cond:{
-                            field: 'is_customer',
-                            op: eq,
-                            value: true
+                        properties:{
+                            is_customer: {
+                                $eq: true
+                            }
                         }
                     }
                 },

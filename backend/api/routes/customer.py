@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from bson import ObjectId
 import bcrypt
 from models.customers import Customer
-from schemas.customer import userEntity, userEntityList
+from models.schemas.customer import userEntity, userEntityList
 from config.db import connection
 
 

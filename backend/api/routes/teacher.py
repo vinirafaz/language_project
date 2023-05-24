@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from bson import ObjectId
-from schemas.teacher import teacherEntity, teacherEntityList
+from models.schemas.teacher import teacherEntity, teacherEntityList
 from config.db import connection
 
 

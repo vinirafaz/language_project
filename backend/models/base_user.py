@@ -9,33 +9,11 @@ class AddressBase(BaseModel):
     state: Optional[str]
     country: Optional[str]
     zip: Optional[str]
-    
-    class Config:
-        schema_extra = {
-            "example": {
-                "street": "Rua dos Bobos",
-                "number": 0,
-                "city": "São Paulo",
-                "state": "SP",
-                "country": "Brasil",
-                "zip": "00000-000"
-            }
-        }
-
 
 class BaseUser(BaseModel):
     id: Optional[str]
     username: str
     email: EmailStr
-    # class Config:
-    #     schema_extra = {
-    #         "example": {
-    #             "email": "teste@teste.com",
-    #             "username": "admin"
-    #         }
-    #     }    
-
-
 
 
 class BaseUserInDb(BaseUser):
@@ -49,3 +27,8 @@ class BaseUserLogged(BaseUserInDb):
     address: Optional[Json[AddressBase]]
     languages: List[str]
     is_customer: bool    
+
+
+class UserLoggin(BaseModel):
+    username: str
+    password: str

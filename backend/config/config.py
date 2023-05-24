@@ -1,5 +1,10 @@
-SECRET = "823e8745f15d6bc253800ff57883f200"
-ALGORITHM = "HS256"
+import os
+
+SECRET = os.getenv('SECRET')
+ALGORITHM = os.getenv('ALGORITHM')
+
+
+GPT_SECRET = os.getenv('GPT_SECRET')
 
 
 class Config:
