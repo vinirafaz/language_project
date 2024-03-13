@@ -1,6 +1,4 @@
-# ❗❗❗ Evitar mexer na Branch MAIN ❗❗❗
-
-# Projeto de Website B.Side Solutions
+# Projeto de Website 
 V1 do README
 
 ## Descrição
